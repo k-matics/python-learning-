@@ -4,7 +4,7 @@ import pywinstyles
 
 root = tk.Tk()
 
-root.title("layout managers")
+root.title("Layout managers")
 root.geometry("300x200")
 btn = tk.Button(root, text="Click Me")
 
@@ -21,4 +21,6 @@ whether it should fill the available space (x, y, or both).
 # pady=5
  """
 btn.pack(side="top", fill="x", padx=5, pady=5)
+
+
 root.mainloop()

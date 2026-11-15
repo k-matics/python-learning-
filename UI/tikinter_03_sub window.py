@@ -10,8 +10,7 @@ root.geometry("300x200")
 # Disable window resizing
 root.resizable(width=False, height=False)
 
-
-
+#functon to open subwindow
 def open_subwindow():
     subwindow = tk.Toplevel(root)
     subwindow.title("Subwindow")
@@ -20,7 +19,8 @@ def open_subwindow():
     lbl_sub.pack()
     lbl_sub2 = tk.Label(subwindow, text="You can add more widgets here")
     lbl_sub2.pack()
-#
+    
+#button to open subwindow
 btn_open_subwindow = tk.Button(root, text="Open Subwindow", command=lambda: open_subwindow()).pack()
 
 
